@@ -2,6 +2,7 @@
     --yellow-900:#FFDA0B;
     --yellow-800:#FF540B;
     --black:#000;
+    --black_800:#000000af;
     --regular-400: 400;
     --medium-500: 500;
     --bolt-700: 700;
@@ -211,6 +212,9 @@ left: 15px;
     font-size: 36px;
     margin-bottom: 50px;
 }
+.services_point{
+    width: 350px;
+}
 .services_item-title{
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -224,27 +228,31 @@ left: 15px;
     color: var(--yellow-900);
     text-decoration: none;
 }
+.services_item-title{
+    padding-bottom: 10px;
+    position: relative;;
+}
 
 .services_item-title:before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: -7px;
-    width: 70px;
-    height: 20px;
-    border-bottom: 2px solid var(--yellow-900);
-    border-left: 2px solid var(--yellow-900);
-  }
-  /* .services_item-title:after {
-    content: "";
-    position: absolute;
-    bottom: -50%;
-    right: -25px;
-    width: 30px;
-    height: 20px;
-    border-bottom: 2px solid #fed57b;
-    border-right: 2px solid #fed57b;
-  } */
+   content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 90%;
+  height: 2px;
+ 
+  background: var(--yellow-900);
+}
+.services_item-title:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 45%;
+  margin-left: -15%;
+  width: 30%;
+  height: 2px;
+  background: var(--yellow-900);
+}
 .services_info{
     display: flex;
     justify-content: space-between;
@@ -254,10 +262,25 @@ left: 15px;
 .services_point{
     max-width: 400px;
 }
+.services_item-link{
+    position: relative;
+}
+.services_item-link::after{
+    content: url("/images/icons/new.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    object-fit: contain;
+    top: -15px;
+    right: -50px;
+}
+
+/* ________________________BLOGERS________________________ */
 
 
-
-
+.blogers_list{
+    margin-bottom: 30px;
+}
 .blogers_item{
     width: 350px !important;
 }
@@ -279,21 +302,141 @@ left: 15px;
     display: flex;
     justify-content: space-around;
 }
+.blogers_link{
+    text-align: center;
+}
 .blogers_icon{
     width: 30px;
     height:30px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.blogers_people{
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--yellow-900);
 }
 
 
+.video{
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: contain;
+}
+.video__link {
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: contain;
+}
 
+.video__link:hover {
+    transform: scale(1.5);
+}
+
+/* ________________________GALLERY________________________ */
+.gallery{
+    margin-bottom: 70px;
+}
+.gallery_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+    margin: auto;
+}
+.gallery_item{
+    max-width: 350px;
+}
+.gallery_img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+} 
+.gallery_item:hover .gallery_hover{
+transform: translateY(0);
+}
+.gallery_wrap{
+position: relative;
+overflow: hidden;
+}
+.gallery_hover{
+    position: absolute;
+    top: 0;
+    background-color: var(--black_800);
+    padding: 10px 15px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+.gallery_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.02em;
+    color:var(--blue-400);
+    overflow: auto;
+    
+}
 
 /* ________________________ADVERTISING________________________ */
 .advertising_item{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
+}
+.advertising_info{
+    width: 60%;
 }
 .advertising_text{
     max-width: 50%;
     margin-bottom: 15px;
+}
+.advertising_slider{
+    width: 40%;
+}
+.slick-track{
+    width: 200px;
+}
+.advertising_photo{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+
+/* ________________________PRODUCTION________________________ */
+.production_image{
+    margin: auto;
+}
+.production_icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.production_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+}
+.production_img{
+    background-position: center center;
+    margin-bottom: 10px;
+}
+.production_link,
+.production_text{
+    text-align: center;
+}
+.production_link{
+    text-decoration: none;
+    color: var(--yellow-900);
 }
