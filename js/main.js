@@ -33,9 +33,7 @@ $('.advertising_slider').slick({
     infinite: true,
     arrows : true,
     slidesToShow: 1,
-    // autoplay: true,
-    slidesToScroll: 1, // по 1-му слайду проскролливать
-    speed: 8000, // медленная смена слайдов - скорость бегущей строки
+    slidesToScroll: 1, // по 1-му слайду проскролливать 
     autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
     cssEase: 'linear', // делаем анимацию однотонной при смене слайда
     

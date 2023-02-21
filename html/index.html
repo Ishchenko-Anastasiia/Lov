@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"/>
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
-      <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800&family=Montserrat:wght@400;600&family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
       <link rel="stylesheet" href="/js/slick/slick.css">
       <link rel="stylesheet" href="/js/slick/slick-theme.css">
       <link rel="stylesheet" href="/css/style.css" />
@@ -20,12 +18,13 @@
       <div class="container">
         <nav class="header_nav">
             <ul class="header_list">
-                <li class="header_item">Команда</li>
-                <li class="header_item">Услуги</li>
-                <li class="header_item">Блогеры</li>
-                <li class="header_item">Рекламные компании</li>
-                <li class="header_item">Продюсирование</li>
-                <li class="header_item">Контакты</li>
+              
+                <li class="header_item" id="team">Команда</li>
+                <li class="header_item" id="">Услуги</li>
+                <li class="header_item" id="bloger">Блогеры</li>
+                <li class="header_item" id="">Рекламные компании</li>
+                <li class="header_item" id="">Продюсирование</li>
+                <li class="header_item" id="">Контакты</li>
             </ul>
         <img class="logo" src="/images/logo.svg" alt="">
         </nav>
@@ -42,7 +41,7 @@
                 
             
         </section>
-        <section class="team">
+        <section class="team" >
           <ul class="slider">
             <li class="slider_item">
               <p class="slider_text">international influencer marketing agency</p> 
@@ -117,7 +116,7 @@
                 <img class="partners_img" src="../images/partners/13.jpg" alt="">
               </li>
                <li class="partners item">
-                <img class="partners_img" src="../images/partners/12.jpg" alt="">
+                <img class="partners_img" src="../images/partners/cheetos.png" alt="">
               </li>
                <li class="partners item">
                 <img class="partners_img" src="../images/partners/11.jpg" alt="">
@@ -196,8 +195,9 @@
                  ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
                </li>
                 <li class="services_item">
+                  <div class="services_wrap">
                   <a class="services_item services_item-link" href="">Pr и продвижение музыкальных треков</a>
-                  <!-- <ul class="service_down">
+                  <ul class="service_down">
                     <li class="service_down_item services_item">
                       Консультация в рамках развития музыкальных проектов
                     </li>
@@ -216,7 +216,8 @@
                     <li class="service_down_item services_item">
                      Помощь в отгрузке треков на цифровые площадки
                     </li>
-                  </ul> -->
+                  </ul>
+                </div>
                 </li>
                 <li class="services_item">
                   Создание и сведение треков
@@ -243,7 +244,7 @@
 
         <section class="blogers">
           <div class="container">
-            <h2 class="blogers_title title"> СОТРУДНИЧЕСТВО С БЛОГЕРАМИ</h2>
+            <h2 class="blogers_title title">Сотрудничество с блогерами</h2>
             <ul class="blogers_list">
               <li class="blogers_item">
                <img class="blogers_img" src="../images/blogers/bloger_1.png" alt="" >
@@ -474,82 +475,105 @@
 
         <section class="advertising">
           <div class="container">
-            <h2 class="advertising_title title">РЕКЛАМНЫЕ КОМПАНИИ ДЛЯ ФЕСТИВАЛЕЙ И ОФФЛАЙН МЕРОПРИЯТИЙ</h2>
+            <h2 class="advertising_title title">Рекламные компании для фестивалейи оффлейн мероприятий</h2>
               <div class="advertising_blog">
                 <ul class="advertising_list">
                   <li class="advertising_item">
-                    <div class="advertising_info">
+                    <div class="advertising_information">
+                      <div class="advertising_info">
                     <p class="advertising_text"> Крупнейший фестиваль актуальной музыки на юге России вернулся!
                      В2022 LIVE FEST SUMMER проходил на новой уникальной мега-площадке в окружении фантастических горных вершин.</p>
                     <p class="advertising_text">Задачей нашей команды было промо мероприятия через инфлюенсеров, с целью продажи билетов.</p>
-                   </div>
-                    <ul class="advertising_slider">
-                    <li class="advertising_img">
-                      <img class="advertising_photo" src="/images/partners/11.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img class="advertising_photo"  src="/images/adversting/1.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/2.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/3.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/4.jpg" alt="">
-                    </li>
-                  </ul>
-
-                  </li>
-                  <li class="advertising_item">
-                    <ul class="advertising_slider">
-                      <li class="advertising_img">
-                        <img class="advertising_photo" src="/images/partners/vk_fest.jpg" alt="">
-                      </li>
-                      <li class="advertising_img">
-                        <img src="/images/adversting/5.jpg" alt="">
-                      </li>
-                      <li class="advertising_img">
-                        <img src="/images/adversting/6.jpg" alt="">
-                      </li>
-                      <li class="advertising_img">
-                        <img src="/images/adversting/7.jpg" alt="">
-                      </li>
-                      <li class="advertising_img">
-                        <img src="/images/adversting/8.jpg" alt="">
-                      </li>
-                      </ul>
-                     <div class="advertising_info">
-                    <p class="advertising_text">Создавали промо через блогеров данного мероприятия, цель была привлечение внимания к мероприятию. </p>
+                      </div>
+                        <div class="advertising_photography">
+                          <img class="advertising_photo" src="/images/partners/fest.png" alt="">
+                        </div>
                      </div>
-                    
+                   <div class="advertising_photo_wrap">
+                    <ul class="advertising_list-photo">
+                      <li class="advertising_img">
+                        <img class="advertising_photo"  src="/images/adversting/1.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo"  src="/images/adversting/2.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo"  src="/images/adversting/3.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo"  src="/images/adversting/4.jpg" alt="">
+                      </li>
+                    </ul>
+                   </div>
+
+    
                   </li>
+
                   <li class="advertising_item">
-                     <div class="advertising_info">
-                    <p class="advertising_text">
-                      3х днеынй Фестиваль топовой компании в отрасли психологии, с приглашенными звездами и блогерами.
-                    </p>
-                    <p class="advertising_text">
-                      Было привлечено 15 блогеров, и разработана индивидуальная стратегия промо и продвижения продукта.
-                    </p>
-                    </div>
-                    <ul class="advertising_slider">
-                    <li class="advertising_img">
-                      <img src="/images/partners/kit.png" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/9.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/10.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/11.jpg" alt="">
-                    </li>
-                    <li class="advertising_img">
-                      <img src="/images/adversting/12.jpg" alt="">
-                    </li>
+                    <div class="advertising_information">
+                      <div class="advertising_photography">
+                        <img class="advertising_photo" src="/images/partners/vk_fest.png" alt="">
+                      </div>
+                      <div class="advertising_info">
+                        <p class="advertising_text">
+                          3х днеынй Фестиваль топовой компании в отрасли психологии, с приглашенными звездами и блогерами.
+                        </p>
+                        <p class="advertising_text">
+                          Было привлечено 15 блогеров, и разработана индивидуальная стратегия промо и продвижения продукта.
+                        </p>
+                      </div>
+                     </div>
+                   <div class="advertising_photo_wrap">
+                    <ul class="advertising_list-photo">
+                      <li class="advertising_img">
+                        <img class="advertising_photo" src="/images/adversting/5.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo" src="/images/adversting/6.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo" src="/images/adversting/7.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                        <img class="advertising_photo" src="/images/adversting/8.jpg" alt="">
+                      </li>
+                    </ul>
+                   </div>
+                  </li>
+
+                  <li class="advertising_item">
+                    <div class="advertising_information">
+                      <div class="advertising_info">
+                        <p class="advertising_text">
+                          3х днеынй Фестиваль топовой компании в отрасли психологии, с приглашенными звездами и блогерами.
+                        </p>
+                        <p class="advertising_text">
+                          Было привлечено 15 блогеров, и разработана индивидуальная стратегия промо и продвижения продукта.
+                        </p>
+                      </div>
+                        <div class="advertising_photography">
+                          <img class="advertising_photo"  src="/images/partners/kit.png" alt="">
+                        </div>
+                      </div>
+                      <div class="advertising_photo_wrap">
+                        <ul class="advertising_list-photo">
+                          <li class="advertising_img">
+                            <img class="advertising_photo"  src="/images/adversting/12.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                         <img class="advertising_photo"  src="/images/adversting/9.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                         <img class="advertising_photo"  src="/images/adversting/10.jpg" alt="">
+                      </li>
+                      <li class="advertising_img">
+                         <img class="advertising_photo"  src="/images/adversting/11.jpg" alt="">
+                      </li>
+                    </ul>
+                   </div>
+
+    
+                  </li>
                   </ul>
                   </li>
                 </ul>
@@ -559,7 +583,7 @@
 
 <section class="gallery">
   <div class="container">
-    <h2 class="gallery_title title"> ПРИМЕРЫ РЕКЛАМНЫХ и PR  КОМПАНИЙ ДЛЯ БРЕНДОВ  и кинокомпаний</h2>
+    <h2 class="gallery_title title">Примеры рекламных и PR компаний для брендов и кинокомпаний</h2>
     <ul class="gallery_list">
       <li class="gallery_item">     
            <div class="gallery_wrap">
@@ -693,11 +717,11 @@ Tik Tok.
 
 
 <section class="production">
-  <div class="container">
+  <div class="container container-production">
     <h2 class="production_title title">Продюсирование</h2>
     <ul class="production_list">
       <li class="production_tanuki">
-        <h3 class="title_heading">КОМЕРЧЕСКОЕ</h3>
+        <h2 class="production_title production_heading">КОМЕРЧЕСКОЕ</h2>
       <img class="production_image"  src="/images/partners/tanuki.png" alt="" >
       <p class="production_text-tanuki">
         В 2020 году компания «ТАНУКИ» обратилась к нам с задачей позиционирования своего бренда в сети TikTok.
@@ -732,7 +756,7 @@ Tik Tok.
             Полностью органичесткий рост без использования таргета
           </p>
           </p>
-          <a href="" class="production_link">
+          <a href="https://www.tiktok.com/@tirochka" class="production_link">
           <img src="/images/icons/tik-tok.svg" alt="" class="production_icon">
          </a>
         </div> 
@@ -753,7 +777,7 @@ Tik Tok.
                "Большое свидание с Янгером" (канал Музыка первого)
                Также был создан с 0 инстаграм аккаунт, на который подписалось 90к человек
               </p>
-              <a href="" class="production_link">
+              <a href="https://www.tiktok.com/@kashtanohata" class="production_link">
                 <img src="/images/icons/tik-tok.svg" alt="" class="production_icon">
                </a>        
                  </div>  
@@ -777,7 +801,7 @@ Tik Tok.
       <p class="production_text">
          Использовали методы перегона аудитории из аккаунта ТТ в инстаграм и - закупалирекламу у блогеров
       </p>
-      <a href="" class="production_link">
+      <a href="https://instagram.com/verodmit" class="production_link">
         <img src="/images/icons/tik-tok.svg" alt="" class="production_icon">
        </a>  
         </div>
@@ -796,7 +820,7 @@ Tik Tok.
              <p class="production_text">
              Использовали методы перегона аудитории из аккаунта ТТ в инстаграм
              </p>
-             <a href="" class="production_link">
+             <a href="https://instagram.com/ermolen.ko" class="production_link">
               <img src="/images/icons/tik-tok.svg" alt="" class="production_icon">
              </a>          </p>
         </div>
@@ -817,9 +841,10 @@ Tik Tok.
           <p class="production_text">
           Использовали методы перегона аудитории из аккаунта ТТ в инстаграм и закупка рекламы у блогеров
         </p>
-        <a href="" class="production_link">
+        <a href="https://www.tiktok.com/@twinsrussian" class="production_link">
           <img src="/images/icons/tik-tok.svg" alt="" class="production_icon">
-         </a>      </div>
+         </a>     
+         </div>
         <img class="production_img" src="/images/production/pr_5.jpg" alt="" >
     </div>
   </li> 
@@ -831,45 +856,47 @@ Tik Tok.
           2021 году клиент пришел c запросом на создания актуального шоу на площадке YouTube под ключ, первый же выпуск шоу набрал набрал 101 000 просмотров. 
           Из-за прекращения финансирования инвестором проекта. Он был закрыт после второго выпуска.
         </p>
-        <!-- VIDEO -->
+      
       </li>
     </ul>
+     
   </div>
+  <div class="container">
+    <div class="video_wrap">
+    <iframe class="video" src="https://www.youtube.com/embed/3uHn3-sTSGM?start=54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
 </section>
     </main>
 <footer class="footer">
   <div class="container">
-      <div class="footer_contact">
+    <div class="footer_wrap">
+      <div class="footer_contact">  
         <ul class="footer_list">
           <li class="footer_item">
-            <use>
-              <svg></svg>
-            </use>
-            <p class="footer_info"></p>
+          <img class="footer_icon" src="/images/icons/telegram.svg" alt=""width="50px" hight="50px" >
+          <a class="footer_link" href="https://t.me/LOV_community" target="_blank">https://t.me/LOV_community</a>
+
           </li>
           <li class="footer_item">
-            <use>
-              <svg></svg>
-            </use>
-            <p class="footer_info"></p>
+            <img class="footer_icon" src="/images/icons/telephone.svg" alt=""width="50px" hight="50px" >
+            <a class="footer_link" href="tel:+79035800867">+7 903 580 0867</a>
           </li>
           <li class="footer_item">
-            <use>
-              <svg></svg>
-            </use>
+            <img class="footer_icon" src="/images/icons/mail.svg" alt=""width="50px" hight="50px" >
             <p class="footer_info"></p>
+            <a class="footer_link" href="mailto:lovteamagency@gmail.com" target="_blank" >lovteamagency@gmail.com</a>
           </li>
         </ul>
       </div>
       <div class="footer_image">
-        <img class="footer_img" src="../images/team_photo/contcts.png" alt="">
+        <img class="footer_img" src="/images/team_photo/contcts.png" alt="">
       </div>
     </div>
+  </div>
 </footer>
-  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
   
   <script src="/js/main.min.js"></script>
   <script src="/js/main.js"></script>
-  <script src=" js/jquery.fancybox.min.js "></script>
 </body>
 </html>
