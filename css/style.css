@@ -66,6 +66,16 @@ body {
     color: var(--yellow-900);
     background-color:var(--black);
 }
+.title{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(90deg,#FF540B 10%,#FFDA0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* ________________________HEADER________________________ */
 
 .header{
@@ -77,6 +87,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .header_list{
     display: flex;
@@ -95,6 +106,8 @@ body {
 .logo{
     width: 150px;
     height: 100px;
+    position: absolute;
+    right: 0;
 }
 
 /* ________________________HERO________________________ */
@@ -105,13 +118,25 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
    
    
 }
-.hero_title{
+.hero_top{
     color: var(--black);
-    max-width: 700px;
-    padding-top: 350px;
+   
+}
+.hero_title{
+    font-family: 'Press Start 2P';
+    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    max-width: 1150px;
+    text-align: center;
+    color: var(--black);
 }
 
 /* ________________________TEAM________________________ */
@@ -119,7 +144,7 @@ body {
     margin-bottom: 50px;
 }
 .slider_item{
-    width: 350px;
+    max-width: 400px;
     margin: 0 15px;
     display: inline-block;
 }
@@ -127,12 +152,12 @@ body {
 
 .slick-slider{
     padding: 5px;
-color: var(--black);
+    color: var(--black);
 }
 .slider_text{
     font-size: 16px;
     line-height: 1.1;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     background-image: linear-gradient(90deg,#FF540B 10%, #FFDA0B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -149,9 +174,6 @@ color: var(--black);
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 .team{
     padding: 70px 0;
 }
@@ -163,18 +185,18 @@ color: var(--black);
     
 }
 .team_item{
-max-width: 350px;
+    max-width: 350px;
 }
 .team_img{
     max-width: 100%;
 }
 .team_name{
+    font-size: 30px;
+    line-height: 1.1;
     text-align: center;
     margin-bottom: 15px;
 }
-.team_info{
- position: relative;
-}
+
 .team_info:not(:last-child){
    margin-bottom: 20px;
    }
@@ -188,8 +210,7 @@ max-width: 350px;
 .team_information{
     max-width: 700px;
     padding-left: 15px;
-    margin: auto;
-    position: relative;   
+    margin: auto;   
 }
 
 .team_info:not(:last-child){
@@ -217,27 +238,40 @@ max-width: 350px;
 
 /* ________________________SERVICES________________________ */
 
-.title{
-    font-family: 'Press Start 2P', cursive;
-    /* font-family: 'Rampart+One'; */
-    font-weight: 700;
-    text-align: center;
-    /* text-transform: uppercase; */
-    font-size: 36px;
-    margin-bottom: 50px;
-    background-image: linear-gradient(90deg,#FF540B 10%,#FFDA0B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .services_point{
-    width: 350px;
+    width: 400px;
 }
 .services_item-title{
-    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    position: relative;;
     margin-bottom: 20px;
     position: relative;
     text-align: center;
 }
+.services_item-title:before {
+    content: "";
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background:linear-gradient(90deg,#FF540B 50%,#FFDA0B);
+ }
+ .services_item-title:after {
+   content: "";
+   position: absolute;
+   bottom: -6px;
+   left: 45%;
+   margin-left: -15%;
+   width: 30%;
+   height: 2px;
+   background-image:linear-gradient(90deg, #FFDA0B 30%,#FF540B);
+ }
+
 .services_item:not(:last-child){
     margin-bottom: 15px;
 }
@@ -245,31 +279,8 @@ max-width: 350px;
     color: var(--yellow-900);
     text-decoration: none;
 }
-.services_item-title{
-    padding-bottom: 10px;
-    position: relative;;
-}
 
-.services_item-title:before {
-   content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background:linear-gradient(90deg,#FF540B 50%,#FFDA0B);
-  /* background: var(--yellow-900); */
-}
-.services_item-title:after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 45%;
-  margin-left: -15%;
-  width: 30%;
-  height: 2px;
-  background-image:linear-gradient(90deg, #FFDA0B 30%,#FF540B);
-}
+
 .services_info{
     display: flex;
     justify-content: space-between;
@@ -504,11 +515,6 @@ body::-webkit-scrollbar-thumb {
 .advertising_photography{
     width: 600px;
 }
-
-/* .advertising_img{
-    width: 50%;
-    margin-left: 25%;
-} */
 .slick-track{
     width: 200px;
 }
@@ -523,6 +529,36 @@ body::-webkit-scrollbar-thumb {
 .container-production{
     max-width: 900px;
 }
+.production_heading{
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    position: relative;;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.production_heading:before {
+    content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 50%;
+   height: 2px;
+   left: 25%;
+   background:linear-gradient(90deg,#FF540B 50%,#FFDA0B);
+ }
+ .production_heading:after {
+   content: "";
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   margin-left: -15%;
+   width: 30%;
+   height: 2px;
+   background-image:linear-gradient(90deg, #FFDA0B 30%,#FF540B);
+ }
+
 .production_tanuki,
 .production_item{
     margin-bottom: 70px;
@@ -558,6 +594,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 .production_text{
+    font-size: 20px;
     max-width: 600px;
     max-height: 200px;
     margin-bottom: 30px;
@@ -575,13 +612,14 @@ body::-webkit-scrollbar-thumb {
 .production_icons{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     gap: 50px;
 }
 .production_text-tanuki{
     text-align: center;
     max-width: 900px;
     margin: auto;
+    margin-bottom: 40px;
 }
 .production_icon-tanuki{
     display: flex;
@@ -606,6 +644,23 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--yellow-900);
 }
+.production_item_video{
+margin: 15px 0;
+}
+
+.production_item_video::before{
+    content: " ";
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #FFDA0B,#FF540B);;
+    border-radius: 2px;
+    z-index: 1;
+    top: -30px;
+}
+
 .video_wrap{
     margin: auto;
 }
@@ -615,6 +670,9 @@ body::-webkit-scrollbar-thumb {
    
 }
 /* ________________________FOOTER________________________ */
+.footer{
+    padding: 50px 0;
+}
 .footer_wrap{
     display: flex;
     justify-content: space-between;
