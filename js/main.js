@@ -1,3 +1,16 @@
+$(function(){
+
+
+$('.header_btn').on('click', function() {
+    $('.header_list').toggleClass('header_list--active');
+});
+
+$('.header_btn').on('click', function() {
+    $('.menu_line').toggleClass('menu_line--active');
+});
+
+
+
 $('.slider').slick({
     infinite: true,
     arrows : false,
@@ -7,6 +20,20 @@ $('.slider').slick({
     speed: 3000, // медленная смена слайдов - скорость бегущей строки
     autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
     cssEase: 'linear', // делаем анимацию однотонной при смене слайда
+    responsive: [
+        {
+          breakpoint: 1450,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+      ]
     
 });
 
@@ -26,15 +53,21 @@ $('.blogers_list').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1450,
+          settings: {
+            slidesToShow: 3,
+          }
+        }        ,
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+            },
+          }
+      ]
 });
 
 
-$('.advertising_slider').slick({
-    infinite: true,
-    arrows : true,
-    slidesToShow: 1,
-    slidesToScroll: 1, // по 1-му слайду проскролливать 
-    autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
-    cssEase: 'linear', // делаем анимацию однотонной при смене слайда
-    
 });
