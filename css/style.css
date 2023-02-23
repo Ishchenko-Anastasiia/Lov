@@ -506,6 +506,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   max-width: 900px;
   margin-bottom: 30px;
+  padding-top: 30px;
  
 }
 .advertising_item:not(:last-child){
