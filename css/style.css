@@ -403,10 +403,12 @@ body,
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-.video{
     max-width: 1200px;
     max-height: 600px;
+}
+.video{
+    
+   width: 100%;
    
 }
 /* ________________________GALLERY________________________ */
