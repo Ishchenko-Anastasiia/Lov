@@ -59,7 +59,7 @@ $('.partners_list').slick({
     slidesToShow: 3,
     autoplay: true,
     slidesToScroll: 1, // по 1-му слайду проскролливать
-    speed: 8000, // медленная смена слайдов - скорость бегущей строки
+    speed: 3000, // медленная смена слайдов - скорость бегущей строки
     autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
     cssEase: 'linear', // делаем анимацию однотонной при смене слайда
     
@@ -83,6 +83,32 @@ $('.blogers_list').slick({
             },
           }
       ]
+});
+
+$('.advertising_list-photo').slick({
+  infinite: true,
+  arrows : false,
+  slidesToShow: 4,
+  autoplay: true,
+  slidesToScroll: 1, // по 1-му слайду проскролливать
+  speed: 3000, // медленная смена слайдов - скорость бегущей строки
+  autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
+  cssEase: 'linear', // делаем анимацию однотонной при смене слайда
+  responsive: [
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+    ]
+  
 });
 
 
