@@ -8,7 +8,9 @@ $('.header_btn').on('click', function() {
 $('.header_btn').on('click', function() {
     $('.menu_line').toggleClass('menu_line--active');
 });
-
+// $('.services_item-link').on('click', function() {
+//   $('.service_down').toggleClass('service_down--active');
+// });
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
