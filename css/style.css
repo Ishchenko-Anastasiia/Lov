@@ -89,6 +89,7 @@ body,
     cursor: pointer;
     width: 44px;
     height: 44px;
+    z-index: 10;
   }
   
   .btn-up::before {
@@ -1010,6 +1011,19 @@ color: var(--yellow-800);
     
 }
 @media (max-width:575px){
+    .btn-up {
+        right: 13px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .btn-up::before {
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        top: 10px;
+    }
+
     body{
         font-size: 16px;
     }
@@ -1076,8 +1090,8 @@ color: var(--yellow-800);
      margin-bottom: 15px;
  }
  .services_item-link::after {
-    right: -40px;
-    top: 10px;
+    right: -15px;
+    top: -35px;
 }
  .service_down {
      min-width: 300px;
