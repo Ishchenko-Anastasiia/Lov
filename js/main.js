@@ -1,5 +1,14 @@
 $(function(){
 
+//   $(document).ready(function() {
+//     $(window).scroll(function() {
+//         if ($(document).scrollTop() > 100) {
+//             $(".header_inner").addClass('fixed');
+//         } else {
+//             $(".header_inner").removeClass('fixed');
+//         }
+//     });
+// });
 
 $('.header_btn').on('click', function() {
     $('.header_list').toggleClass('header_list--active');
@@ -67,7 +76,7 @@ $('.partners_list').slick({
 $('.advertising_list-photo').slick({
   infinite: true,
   arrows : false,
-  slidesToShow: 3,
+  slidesToShow: 2,
   autoplay: true,
   slidesToScroll: 1, // по 1-му слайду проскролливать
   speed: 4000, // медленная смена слайдов - скорость бегущей строки
