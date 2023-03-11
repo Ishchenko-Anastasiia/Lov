@@ -1,14 +1,19 @@
 $(function(){
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+            $(".header").addClass('fixed');
+        } else {
+            $(".header").removeClass('fixed');
+        }
+    });
+});
 
-//   $(document).ready(function() {
-//     $(window).scroll(function() {
-//         if ($(document).scrollTop() > 100) {
-//             $(".header_inner").addClass('fixed');
-//         } else {
-//             $(".header_inner").removeClass('fixed');
-//         }
-//     });
-// });
+$('.sorting__price').ionRangeSlider({
+    type: "double",
+})
+
+
 
 $('.header_btn').on('click', function() {
     $('.header_list').toggleClass('header_list--active');
@@ -86,9 +91,15 @@ $('.advertising_list-photo').slick({
 });
 
 $('.blogers_list').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  infinite: true,
+  arrows : false,
+  slidesToShow: 3,
+  autoplay: true,
+  slidesToScroll: 1, // по 1-му слайду проскролливать
+  speed: 6500, // медленная смена слайдов - скорость бегущей строки
+  autoplaySpeed: 0, //делаем запуск мгновенный с загрузкой страницы
+  cssEase: 'linear', // делаем анимацию однотонной при смене слайда
+  
     responsive: [
         {
           breakpoint: 1450,
