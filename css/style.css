@@ -197,16 +197,16 @@ body,
 .hero_top{
     position: absolute;
     margin: auto;
-    top: 40%;
-   max-width: 90%;
+    top: 35%;
+    max-width: 70%;
     text-align: left;
     z-index: 1;
     color: var(--black);
 }
 .hero_title{
-    font-family: 'Comfortaa';
+    font-family: 'Press Start 2P', cursive;
     line-height: 1.2;
-    font-size: 45px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -800,6 +800,9 @@ color: var(--yellow-800);
 
 
 @media (max-width:1445px){
+    .hero_top{
+        max-width: 85%;
+    }
     .hero_title {
         font-size: 38px;
     }
@@ -850,10 +853,12 @@ color: var(--yellow-800);
     }
     .hero_top{
         margin-left: 30px;
+        top: 35%;
+        max-width: 90%;
     }
    
     .hero_title {
-        font-size: 40px;
+        font-size: 30px;
         
     }
     .header_list{
@@ -1024,9 +1029,7 @@ color: var(--yellow-800);
 }
 
 @media (max-width:772px){
-    .hero_title{
-        font-size: 37px;
-    }
+ 
     .blogers_item {
         max-width: 150px;
     }
@@ -1052,6 +1055,9 @@ color: var(--yellow-800);
     }
     .services_point{
         margin-right: 0;
+    }
+     .service_down {
+     min-width: 495px;
     }
     .gallery_item {
         max-width: 250px;
@@ -1098,10 +1104,10 @@ color: var(--yellow-800);
         height: 55vh;
       }
       .hero_top{
-        top: 26%;
+        top: 35%;
       }
  .hero_title {
-     font-size: 21px;
+     font-size: 15px;
  }
  .title {
      font-size: 20px;
@@ -1142,10 +1148,10 @@ color: var(--yellow-800);
 }
 .services_wrap:hover .service_down {
     display: block;
-    left: -30px;
+    left: -14px;
 }
  .service_down {
-     min-width: 400px;
+     min-width: 320px;
  }
  .slick-prev{
     top: -5px;
@@ -1161,10 +1167,10 @@ color: var(--yellow-800);
      margin-bottom: 5px;
  }
  .blogers_item {
-     max-width: 165px;
+     max-width: 130px;
  }
  .blogers_img {
-     max-height: 165px;
+     max-height: 130px;
  }
  .blogers_soc {
     justify-content: center;
